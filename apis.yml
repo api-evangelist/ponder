@@ -1,8 +1,26 @@
 aid: ponder
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ponder.png
 name: Ponder
-description: Ponder is a company surfaced as a portfolio company of 8vc, lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Ponder was a data-science software company founded by UC Berkeley RISELab researchers
+  (Doris Lee, Devin Petersohn, and Prof. Aditya Parameswaran) to commercialize the popular
+  open-source Python libraries Modin (a drop-in pandas replacement that scales dataframe
+  workflows with a single line of code) and Lux (automated visualization and intelligent
+  data discovery inside notebooks). Backed by Lightspeed Venture Partners, 8VC, Intel Capital,
+  and The House Fund via a $7M seed in March 2022, Ponder was acquired by Snowflake in October
+  2023. The ponder.io domain is now parked and no longer serves a live product, developer
+  portal, or API; the open-source libraries remain the durable public surface.
 url: https://raw.githubusercontent.com/api-evangelist/ponder/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,15 +31,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Data Science
+- DataFrames
+- Analytics
+- Python
+- Machine Learning
+- Open Source
+x-status: acquired
+x-acquired-by: Snowflake
+x-acquired-date: '2023-10-23'
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/ponder-domain-security.yml
+- type: Packages
+  url: packages/ponder-packages.yml
+- type: GitHubOrganization
+  url: https://github.com/ponder-org
 - type: Website
   url: https://ponder.io

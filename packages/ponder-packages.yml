@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/project/modin/ ; https://pypi.org/project/lux-api/
+note: >-
+  Ponder was a data-science company (UC Berkeley RISELab) that commercialized two
+  open-source Python dataframe/analytics libraries. These packages are the software
+  Ponder was built on; they are community/open-source owned (modin-project, lux-org)
+  rather than first-party proprietary API SDKs, so official is left false. Ponder's
+  own gated commercial "ponder" package is not published on any public registry.
+  Ponder was acquired by Snowflake in October 2023.
+packages:
+- language: python
+  registry: pypi
+  name: modin
+  url: https://pypi.org/project/modin/
+  install: pip install modin
+  repo: https://github.com/modin-project/modin
+  summary: "Modin: scale your pandas workflows by changing a single line of code."
+  official: false
+- language: python
+  registry: pypi
+  name: lux-api
+  url: https://pypi.org/project/lux-api/
+  install: pip install lux-api
+  repo: https://github.com/lux-org/lux
+  author: Doris Jung-Lin Lee (Ponder co-founder)
+  summary: A Python API for intelligent data discovery and automated visualization.
+  official: false
